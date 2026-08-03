@@ -1,0 +1,2705 @@
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+==== Using environment with the following metadata ====
+{
+    "env_name": "Stack_D1",
+    "env_version": "1.4.1",
+    "type": 1,
+    "env_kwargs": {
+        "has_renderer": false,
+        "has_offscreen_renderer": true,
+        "ignore_done": true,
+        "use_object_obs": true,
+        "use_camera_obs": true,
+        "control_freq": 20,
+        "controller_configs": {
+            "type": "OSC_POSE",
+            "input_max": 1,
+            "input_min": -1,
+            "output_max": [
+                0.05,
+                0.05,
+                0.05,
+                0.5,
+                0.5,
+                0.5
+            ],
+            "output_min": [
+                -0.05,
+                -0.05,
+                -0.05,
+                -0.5,
+                -0.5,
+                -0.5
+            ],
+            "kp": 150,
+            "damping": 1,
+            "impedance_mode": "fixed",
+            "kp_limits": [
+                0,
+                300
+            ],
+            "damping_limits": [
+                0,
+                10
+            ],
+            "position_limits": null,
+            "orientation_limits": null,
+            "uncouple_pos_ori": true,
+            "control_delta": true,
+            "interpolation": null,
+            "ramp_ratio": 0.2
+        },
+        "robots": [
+            "Panda"
+        ],
+        "camera_depths": true,
+        "camera_heights": 84,
+        "camera_widths": 84,
+        "render_gpu_device_id": 0,
+        "reward_shaping": false,
+        "camera_names": [
+            "birdview",
+            "agentview",
+            "sideview",
+            "robot0_eye_in_hand"
+        ]
+    }
+}
+
+input file: data/robomimic/datasets/stack_d1/stack_d1.hdf5
+output file: data/robomimic/datasets/stack_d1/stack_d1_voxel_200.hdf5
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 0: wrote 102 transitions to group demo_0
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 1: wrote 96 transitions to group demo_1
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 2: wrote 110 transitions to group demo_2
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 3: wrote 103 transitions to group demo_3
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 4: wrote 87 transitions to group demo_4
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 5: wrote 96 transitions to group demo_5
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 6: wrote 111 transitions to group demo_6
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 7: wrote 109 transitions to group demo_7
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 8: wrote 123 transitions to group demo_8
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 9: wrote 133 transitions to group demo_9
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 10: wrote 115 transitions to group demo_10
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 11: wrote 101 transitions to group demo_11
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 12: wrote 88 transitions to group demo_12
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth']
+ep 13: wrote 108 transitions to group demo_13
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 14: wrote 111 transitions to group demo_14
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 15: wrote 114 transitions to group demo_15
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 16: wrote 99 transitions to group demo_16
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 17: wrote 94 transitions to group demo_17
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 18: wrote 109 transitions to group demo_18
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 19: wrote 97 transitions to group demo_19
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth']
+ep 20: wrote 115 transitions to group demo_20
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 21: wrote 106 transitions to group demo_21
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 22: wrote 100 transitions to group demo_22
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 23: wrote 119 transitions to group demo_23
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 24: wrote 93 transitions to group demo_24
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 25: wrote 113 transitions to group demo_25
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 26: wrote 98 transitions to group demo_26
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 27: wrote 94 transitions to group demo_27
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 28: wrote 97 transitions to group demo_28
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 29: wrote 117 transitions to group demo_29
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 30: wrote 94 transitions to group demo_30
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 31: wrote 95 transitions to group demo_31
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth']
+ep 32: wrote 113 transitions to group demo_32
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 33: wrote 108 transitions to group demo_33
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 34: wrote 124 transitions to group demo_34
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 35: wrote 106 transitions to group demo_35
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 36: wrote 110 transitions to group demo_36
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth', 'sideview_depth']
+ep 37: wrote 110 transitions to group demo_37
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 38: wrote 131 transitions to group demo_38
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 39: wrote 123 transitions to group demo_39
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 40: wrote 109 transitions to group demo_40
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 41: wrote 98 transitions to group demo_41
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 42: wrote 105 transitions to group demo_42
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 43: wrote 119 transitions to group demo_43
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 44: wrote 91 transitions to group demo_44
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 45: wrote 97 transitions to group demo_45
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 46: wrote 99 transitions to group demo_46
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 47: wrote 110 transitions to group demo_47
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 48: wrote 113 transitions to group demo_48
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 49: wrote 101 transitions to group demo_49
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 50: wrote 114 transitions to group demo_50
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth', 'sideview_depth']
+ep 51: wrote 111 transitions to group demo_51
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 52: wrote 108 transitions to group demo_52
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 53: wrote 123 transitions to group demo_53
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 54: wrote 89 transitions to group demo_54
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 55: wrote 101 transitions to group demo_55
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 56: wrote 101 transitions to group demo_56
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 57: wrote 119 transitions to group demo_57
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 58: wrote 111 transitions to group demo_58
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 59: wrote 98 transitions to group demo_59
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 60: wrote 107 transitions to group demo_60
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 61: wrote 114 transitions to group demo_61
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 62: wrote 90 transitions to group demo_62
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 63: wrote 94 transitions to group demo_63
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 64: wrote 99 transitions to group demo_64
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 65: wrote 95 transitions to group demo_65
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 66: wrote 107 transitions to group demo_66
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 67: wrote 116 transitions to group demo_67
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 68: wrote 110 transitions to group demo_68
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 69: wrote 113 transitions to group demo_69
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 70: wrote 123 transitions to group demo_70
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 71: wrote 97 transitions to group demo_71
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 72: wrote 95 transitions to group demo_72
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 73: wrote 122 transitions to group demo_73
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 74: wrote 112 transitions to group demo_74
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 75: wrote 104 transitions to group demo_75
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 76: wrote 96 transitions to group demo_76
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 77: wrote 92 transitions to group demo_77
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 78: wrote 112 transitions to group demo_78
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 79: wrote 118 transitions to group demo_79
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 80: wrote 125 transitions to group demo_80
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 81: wrote 107 transitions to group demo_81
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 82: wrote 105 transitions to group demo_82
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 83: wrote 106 transitions to group demo_83
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 84: wrote 102 transitions to group demo_84
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 85: wrote 120 transitions to group demo_85
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 86: wrote 107 transitions to group demo_86
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 87: wrote 127 transitions to group demo_87
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 88: wrote 124 transitions to group demo_88
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 89: wrote 115 transitions to group demo_89
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 90: wrote 113 transitions to group demo_90
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 91: wrote 110 transitions to group demo_91
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 92: wrote 87 transitions to group demo_92
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 93: wrote 117 transitions to group demo_93
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 94: wrote 110 transitions to group demo_94
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 95: wrote 124 transitions to group demo_95
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 96: wrote 124 transitions to group demo_96
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 97: wrote 116 transitions to group demo_97
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 98: wrote 132 transitions to group demo_98
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 99: wrote 101 transitions to group demo_99
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth', 'sideview_depth']
+ep 100: wrote 114 transitions to group demo_100
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 101: wrote 88 transitions to group demo_101
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 102: wrote 117 transitions to group demo_102
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 103: wrote 114 transitions to group demo_103
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 104: wrote 115 transitions to group demo_104
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 105: wrote 126 transitions to group demo_105
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 106: wrote 108 transitions to group demo_106
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 107: wrote 109 transitions to group demo_107
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 108: wrote 84 transitions to group demo_108
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 109: wrote 118 transitions to group demo_109
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 110: wrote 109 transitions to group demo_110
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 111: wrote 125 transitions to group demo_111
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 112: wrote 111 transitions to group demo_112
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 113: wrote 109 transitions to group demo_113
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 114: wrote 106 transitions to group demo_114
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 115: wrote 132 transitions to group demo_115
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth']
+ep 116: wrote 119 transitions to group demo_116
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 117: wrote 100 transitions to group demo_117
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 118: wrote 126 transitions to group demo_118
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 119: wrote 115 transitions to group demo_119
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 120: wrote 117 transitions to group demo_120
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 121: wrote 111 transitions to group demo_121
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 122: wrote 119 transitions to group demo_122
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth', 'birdview_depth']
+ep 123: wrote 124 transitions to group demo_123
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 124: wrote 102 transitions to group demo_124
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 125: wrote 88 transitions to group demo_125
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 126: wrote 106 transitions to group demo_126
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 127: wrote 110 transitions to group demo_127
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 128: wrote 95 transitions to group demo_128
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 129: wrote 102 transitions to group demo_129
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 130: wrote 101 transitions to group demo_130
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth', 'sideview_depth']
+ep 131: wrote 115 transitions to group demo_131
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 132: wrote 97 transitions to group demo_132
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 133: wrote 93 transitions to group demo_133
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 134: wrote 106 transitions to group demo_134
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 135: wrote 117 transitions to group demo_135
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 136: wrote 99 transitions to group demo_136
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 137: wrote 108 transitions to group demo_137
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 138: wrote 110 transitions to group demo_138
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 139: wrote 119 transitions to group demo_139
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 140: wrote 122 transitions to group demo_140
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 141: wrote 95 transitions to group demo_141
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 142: wrote 111 transitions to group demo_142
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 143: wrote 98 transitions to group demo_143
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 144: wrote 100 transitions to group demo_144
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 145: wrote 107 transitions to group demo_145
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 146: wrote 125 transitions to group demo_146
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 147: wrote 124 transitions to group demo_147
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 148: wrote 112 transitions to group demo_148
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 149: wrote 100 transitions to group demo_149
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 150: wrote 96 transitions to group demo_150
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 151: wrote 105 transitions to group demo_151
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 152: wrote 115 transitions to group demo_152
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'birdview_depth', 'sideview_depth']
+ep 153: wrote 92 transitions to group demo_153
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 154: wrote 106 transitions to group demo_154
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 155: wrote 104 transitions to group demo_155
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 156: wrote 104 transitions to group demo_156
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 157: wrote 109 transitions to group demo_157
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 158: wrote 110 transitions to group demo_158
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 159: wrote 106 transitions to group demo_159
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 160: wrote 97 transitions to group demo_160
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 161: wrote 120 transitions to group demo_161
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'birdview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 162: wrote 107 transitions to group demo_162
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 163: wrote 109 transitions to group demo_163
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 164: wrote 123 transitions to group demo_164
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 165: wrote 85 transitions to group demo_165
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 166: wrote 115 transitions to group demo_166
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 167: wrote 112 transitions to group demo_167
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 168: wrote 105 transitions to group demo_168
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 169: wrote 124 transitions to group demo_169
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 170: wrote 129 transitions to group demo_170
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 171: wrote 126 transitions to group demo_171
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'sideview_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 172: wrote 98 transitions to group demo_172
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth', 'agentview_depth']
+ep 173: wrote 127 transitions to group demo_173
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'birdview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 174: wrote 110 transitions to group demo_174
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 175: wrote 85 transitions to group demo_175
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 176: wrote 101 transitions to group demo_176
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+ep 177: wrote 117 transitions to group demo_177
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 178: wrote 104 transitions to group demo_178
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 179: wrote 95 transitions to group demo_179
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 180: wrote 94 transitions to group demo_180
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth']
+ep 181: wrote 100 transitions to group demo_181
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 182: wrote 111 transitions to group demo_182
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 183: wrote 117 transitions to group demo_183
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth']
+ep 184: wrote 100 transitions to group demo_184
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 185: wrote 105 transitions to group demo_185
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 186: wrote 106 transitions to group demo_186
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'birdview_image', 'sideview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 187: wrote 93 transitions to group demo_187
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 188: wrote 105 transitions to group demo_188
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'birdview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 189: wrote 94 transitions to group demo_189
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'robot0_eye_in_hand_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 190: wrote 98 transitions to group demo_190
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'birdview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth', 'agentview_depth']
+ep 191: wrote 87 transitions to group demo_191
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth']
+ep 192: wrote 104 transitions to group demo_192
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['birdview_image', 'robot0_eye_in_hand_image', 'agentview_image', 'sideview_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'birdview_depth', 'agentview_depth', 'sideview_depth']
+ep 193: wrote 129 transitions to group demo_193
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'robot0_eye_in_hand_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'agentview_depth', 'sideview_depth', 'robot0_eye_in_hand_depth']
+ep 194: wrote 110 transitions to group demo_194
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth']
+ep 195: wrote 96 transitions to group demo_195
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 196: wrote 103 transitions to group demo_196
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth', 'agentview_depth']
+ep 197: wrote 101 transitions to group demo_197
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'birdview_image', 'sideview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['robot0_eye_in_hand_depth', 'agentview_depth', 'sideview_depth', 'birdview_depth']
+ep 198: wrote 123 transitions to group demo_198
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 199: wrote 94 transitions to group demo_199
+Wrote 200 trajectories to data/robomimic/datasets/stack_d1/stack_d1_voxel_200.hdf5
+	Command being timed: "env MUJOCO_GL=osmesa PYTHONUNBUFFERED=1 python canonical_policy/scripts/dataset_states_to_obs.py --input data/robomimic/datasets/stack_d1/stack_d1.hdf5 --output data/robomimic/datasets/stack_d1/stack_d1_voxel_200.hdf5 --num_workers=1 --n=200"
+	User time (seconds): 78404.76
+	System time (seconds): 2394.31
+	Percent of CPU this job got: 1087%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:03:51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2473508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1212
+	Minor (reclaiming a frame) page faults: 232475221
+	Voluntary context switches: 67880117
+	Involuntary context switches: 117947
+	Swaps: 0
+	File system inputs: 264288
+	File system outputs: 4175936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

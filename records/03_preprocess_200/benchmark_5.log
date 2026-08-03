@@ -1,0 +1,170 @@
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'birdview_image', 'sideview_image', 'agentview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'birdview_depth', 'sideview_depth']
+==== Using environment with the following metadata ====
+{
+    "env_name": "Stack_D1",
+    "env_version": "1.4.1",
+    "type": 1,
+    "env_kwargs": {
+        "has_renderer": false,
+        "has_offscreen_renderer": true,
+        "ignore_done": true,
+        "use_object_obs": true,
+        "use_camera_obs": true,
+        "control_freq": 20,
+        "controller_configs": {
+            "type": "OSC_POSE",
+            "input_max": 1,
+            "input_min": -1,
+            "output_max": [
+                0.05,
+                0.05,
+                0.05,
+                0.5,
+                0.5,
+                0.5
+            ],
+            "output_min": [
+                -0.05,
+                -0.05,
+                -0.05,
+                -0.5,
+                -0.5,
+                -0.5
+            ],
+            "kp": 150,
+            "damping": 1,
+            "impedance_mode": "fixed",
+            "kp_limits": [
+                0,
+                300
+            ],
+            "damping_limits": [
+                0,
+                10
+            ],
+            "position_limits": null,
+            "orientation_limits": null,
+            "uncouple_pos_ori": true,
+            "control_delta": true,
+            "interpolation": null,
+            "ramp_ratio": 0.2
+        },
+        "robots": [
+            "Panda"
+        ],
+        "camera_depths": true,
+        "camera_heights": 84,
+        "camera_widths": 84,
+        "render_gpu_device_id": 0,
+        "reward_shaping": false,
+        "camera_names": [
+            "birdview",
+            "agentview",
+            "sideview",
+            "robot0_eye_in_hand"
+        ]
+    }
+}
+
+input file: data/robomimic/datasets/stack_d1/stack_d1.hdf5
+output file: data/robomimic/datasets/stack_d1/stack_d1_voxel_benchmark5.hdf5
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['agentview_image', 'sideview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 0: wrote 102 transitions to group demo_0
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'birdview_image', 'agentview_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: ['birdview_depth', 'sideview_depth', 'agentview_depth', 'robot0_eye_in_hand_depth']
+ep 1: wrote 96 transitions to group demo_1
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['robot0_eye_in_hand_image', 'agentview_image', 'sideview_image', 'birdview_image']
+using obs modality: depth with keys: ['birdview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'agentview_depth']
+ep 2: wrote 110 transitions to group demo_2
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['agentview_depth', 'robot0_eye_in_hand_depth', 'sideview_depth', 'birdview_depth']
+ep 3: wrote 103 transitions to group demo_3
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Warning: make sure gym is installed if you want to use the GymWrapper.
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: []
+using obs modality: rgb with keys: ['sideview_image', 'agentview_image', 'robot0_eye_in_hand_image', 'birdview_image']
+using obs modality: depth with keys: ['sideview_depth', 'agentview_depth', 'birdview_depth', 'robot0_eye_in_hand_depth']
+ep 4: wrote 87 transitions to group demo_4
+Wrote 5 trajectories to data/robomimic/datasets/stack_d1/stack_d1_voxel_benchmark5.hdf5
+	Command being timed: "env MUJOCO_GL=osmesa PYTHONUNBUFFERED=1 python canonical_policy/scripts/dataset_states_to_obs.py --input data/robomimic/datasets/stack_d1/stack_d1.hdf5 --output data/robomimic/datasets/stack_d1/stack_d1_voxel_benchmark5.hdf5 --num_workers=1 --n=5"
+	User time (seconds): 1799.92
+	System time (seconds): 55.34
+	Percent of CPU this job got: 1049%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:56.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2251972
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7356
+	Minor (reclaiming a frame) page faults: 5767184
+	Voluntary context switches: 1633957
+	Involuntary context switches: 2454
+	Swaps: 0
+	File system inputs: 1356600
+	File system outputs: 95496
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

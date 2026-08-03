@@ -1,0 +1,18 @@
+Dataset: Stack D1
+Record time: 2026-08-03T16:05:39+08:00
+
+Local path:
+/home/cheng/projects/canonical_policy/data/robomimic/datasets/stack_d1/stack_d1.hdf5
+
+File size:
+-rw-r--r-- 1 cheng cheng 1023M Aug  3 13:37 ../canonical_policy/data/robomimic/datasets/stack_d1/stack_d1.hdf5
+
+SHA256:
+edc9815a2738a583dcb3e7a9e239a71eca6057396a839e52b022935c273cfd61  ../canonical_policy/data/robomimic/datasets/stack_d1/stack_d1.hdf5
+
+HDF5 summary:
+Root keys: ['data']
+Number of demos: 1000
+demo_0 steps: 102
+Action shape: (102, 7)
+State shape: (102, 45)

@@ -1,0 +1,28 @@
+Record time:
+2026-08-03T16:04:23+08:00
+
+Operating system:
+NAME="Ubuntu"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+
+Python:
+/home/cheng/miniforge3/envs/cp/bin/python
+Python 3.9.15
+
+Canonical Policy commit:
+de5a897e1fba61fa9f443834cedc60dde907e7eb
+
+MimicGen commit:
+081f7dbbe5fff17b28c67ce8ec87c371f32526a9
+
+Core package versions:
+PyTorch: 2.1.0
+PyTorch CUDA: 11.8
+CUDA available: True
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+PyTorch3D: 0.7.5
+MuJoCo: 2.3.2
+Open3D: 0.18.0
+robosuite: 1.4.1
+robomimic: 0.3.0
+escnn: 1.0.13

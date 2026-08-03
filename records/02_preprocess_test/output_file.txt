@@ -1,0 +1,7 @@
+Record time: 2026-08-03T16:07:06+08:00
+
+File information:
+-rw-r--r-- 1 cheng cheng 9.3M Aug  3 14:40 ../canonical_policy/data/robomimic/datasets/stack_d1/stack_d1_voxel_test.hdf5
+
+SHA256:
+e49e97136e8f78fb3b61dcad6f1e44ef87920cda1b8468905a4e0686d66cf7ab  ../canonical_policy/data/robomimic/datasets/stack_d1/stack_d1_voxel_test.hdf5

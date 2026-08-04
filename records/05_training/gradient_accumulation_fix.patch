@@ -1,0 +1,19 @@
+diff --git a/canonical_policy/workspace/train_canonical_workspace.py b/canonical_policy/workspace/train_canonical_workspace.py
+index 849bc2d..2fae399 100644
+--- a/canonical_policy/workspace/train_canonical_workspace.py
++++ b/canonical_policy/workspace/train_canonical_workspace.py
+@@ -200,2 +200,6 @@ class TrainCanonicalWorkspace:
+-                    # step optimizer
+-                    if self.global_step % cfg.training.gradient_accumulate_every == 0:
++                    # step optimizer after enough micro-batches
++                    should_step = (
++                        (self.global_step + 1)
++                        % cfg.training.gradient_accumulate_every == 0
++                    )
++                    if should_step:
+@@ -206,2 +210,3 @@ class TrainCanonicalWorkspace:
+-                    # update ema
+-                    if cfg.training.use_ema:
++
++                    # update ema only after an optimizer step
++                    if cfg.training.use_ema and should_step:

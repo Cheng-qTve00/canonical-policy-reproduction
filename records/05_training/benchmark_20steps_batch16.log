@@ -1,0 +1,48 @@
+[33m[CanonicalEncoder] point cloud shape: [1024, 6][0m
+[33m[CanonicalEncoder] state shape: 9[0m
+[31m[CanonicalEncoder] output dim: 128[0m
+[33m[DiffusionUnetCanonicalPolicy] pointnet_type: cp_so2[0m
+[2026-08-04 13:50:45,810][canonical_policy.model.diffusion.canonical_conditional_unet1d][INFO] - number of parameters: 1.316007e+07
+Acquiring lock on cache.
+Loading cached ReplayBuffer from Disk.
+Loaded!
+[2026-08-04 13:50:52,339][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+Warning: make sure gym is installed if you want to use the GymWrapper.
+[33mROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/robomimic/scripts/setup_macros.py
+)[0m
+Created environment with name Stack_D1
+Action size is 7
+Created environment with name Stack_D1
+Action size is 7
+[33m-----------------------------[0m
+[33m[WandB] group: None[0m
+[33m[WandB] name: cp_so2_200[0m
+[33m-----------------------------[0m
+Training epoch 0:   0%|          | 0/1249 [00:00<?, ?it/s]/home/cheng/miniforge3/envs/cp/lib/python3.9/site-packages/torch/nn/modules/conv.py:306: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at /opt/conda/conda-bld/pytorch_1695392022560/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv1d(input, weight, bias, self.stride,
+Training epoch 0:   0%|          | 1/1249 [00:01<26:56,  1.30s/it, loss=0.693]Training epoch 0:   1%|          | 9/1249 [00:02<04:45,  4.34it/s, loss=0.624]Training epoch 0:   1%|▏         | 17/1249 [00:03<03:39,  5.62it/s, loss=0.576]                                                                               	Command being timed: "env MUJOCO_GL=osmesa PYTHONUNBUFFERED=1 WANDB_MODE=offline WANDB_SILENT=true conda run --no-capture-output -n cp python train.py --config-name=train_canonical_diffusion_unet_abs task_name=stack_d1 n_demo=200 policy.pointnet_type=cp_so2 dataloader.batch_size=16 val_dataloader.batch_size=16 dataloader.num_workers=2 val_dataloader.num_workers=2 dataloader.persistent_workers=false val_dataloader.persistent_workers=false training.num_epochs=1 training.max_train_steps=20 training.resume=false logging.mode=offline checkpoint.save_ckpt=false task.env_runner.n_train=0 task.env_runner.n_train_vis=0 task.env_runner.n_test=0 task.env_runner.n_test_vis=0 task.env_runner.n_envs=1"
+	User time (seconds): 36.41
+	System time (seconds): 4.15
+	Percent of CPU this job got: 166%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:24.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2302112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 10255
+	Minor (reclaiming a frame) page faults: 953739
+	Voluntary context switches: 60469
+	Involuntary context switches: 193
+	Swaps: 0
+	File system inputs: 2640744
+	File system outputs: 280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

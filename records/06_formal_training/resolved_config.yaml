@@ -1,0 +1,316 @@
+name: train_canonical
+_target_: canonical_policy.workspace.train_canonical_workspace.TrainCanonicalWorkspace
+shape_meta:
+  obs:
+    robot0_eye_in_hand_image:
+      shape:
+      - 3
+      - 84
+      - 84
+      type: rgb
+    point_cloud:
+      shape:
+      - 1024
+      - 6
+      type: point_cloud
+    robot0_eef_pos:
+      shape:
+      - 3
+    robot0_eef_quat:
+      shape:
+      - 4
+    robot0_gripper_qpos:
+      shape:
+      - 2
+  action:
+    shape:
+    - 10
+exp_name: debug
+task_name: stack_d1
+n_demo: 200
+horizon: 16
+n_obs_steps: 2
+n_action_steps: 8
+n_latency_steps: 0
+dataset_obs_steps: 2
+keypoint_visible_rate: 1.0
+obs_as_global_cond: true
+dataset_target: canonical_policy.dataset.robomimic_replay_point_cloud_dataset.RobomimicReplayPointCloudDataset
+dataset_path: data/robomimic/datasets/stack_d1/stack_d1_voxel_abs.hdf5
+policy:
+  _target_: canonical_policy.policy.diffusion_canonical_unet_policy.DiffusionCanonicalUNetPolicy
+  use_point_crop: true
+  diffusion_step_embed_dim: 128
+  down_dims:
+  - 128
+  - 256
+  - 384
+  crop_shape:
+  - 80
+  - 80
+  encoder_output_dim: 64
+  horizon: 16
+  kernel_size: 5
+  n_action_steps: 8
+  n_groups: 8
+  n_obs_steps: 2
+  noise_scheduler:
+    _target_: diffusers.schedulers.scheduling_ddim.DDIMScheduler
+    num_train_timesteps: 100
+    beta_start: 0.0001
+    beta_end: 0.02
+    beta_schedule: squaredcos_cap_v2
+    clip_sample: true
+    set_alpha_to_one: true
+    steps_offset: 0
+    prediction_type: sample
+  num_inference_steps: 10
+  obs_as_global_cond: true
+  shape_meta:
+    obs:
+      robot0_eye_in_hand_image:
+        shape:
+        - 3
+        - 84
+        - 84
+        type: rgb
+      point_cloud:
+        shape:
+        - 1024
+        - 6
+        type: point_cloud
+      robot0_eef_pos:
+        shape:
+        - 3
+      robot0_eef_quat:
+        shape:
+        - 4
+      robot0_gripper_qpos:
+        shape:
+        - 2
+    action:
+      shape:
+      - 10
+  use_pc_color: false
+  pointnet_type: cp_so2
+  canonical_encoder_cfg:
+    num_points: 256
+    neighbor_num: 10
+    rot_hidden_dim: 48
+    rot_layers: 4
+ema:
+  _target_: canonical_policy.model.diffusion.ema_model.EMAModel
+  update_after_step: 0
+  inv_gamma: 1.0
+  power: 0.75
+  min_value: 0.0
+  max_value: 0.9999
+dataloader:
+  batch_size: 32
+  num_workers: 2
+  shuffle: true
+  pin_memory: true
+  persistent_workers: false
+  drop_last: true
+val_dataloader:
+  batch_size: 32
+  num_workers: 2
+  shuffle: false
+  pin_memory: true
+  persistent_workers: false
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 8.0e-05
+  betas:
+  - 0.95
+  - 0.999
+  eps: 1.0e-08
+  weight_decay: 1.0e-06
+training:
+  device: cuda:0
+  seed: 42
+  debug: false
+  resume: false
+  lr_scheduler: cosine
+  lr_warmup_steps: 500
+  num_epochs: 250
+  gradient_accumulate_every: 4
+  use_ema: true
+  rollout_every: 10.0
+  checkpoint_every: 10.0
+  val_every: 1
+  sample_every: 5
+  max_train_steps: null
+  max_val_steps: null
+  tqdm_interval_sec: 1.0
+logging:
+  project: canonical_stack_d1
+  resume: false
+  mode: offline
+  name: cp_so2_200
+  tags:
+  - train_canonical
+  - stack_d1
+  - debug
+  id: null
+  group: null
+checkpoint:
+  save_ckpt: true
+  topk:
+    monitor_key: test_mean_score
+    mode: max
+    k: 1
+    format_str: epoch={epoch:04d}-test_mean_score={test_mean_score:.3f}.ckpt
+  save_last_ckpt: true
+  save_last_snapshot: false
+multi_run:
+  run_dir: data/outputs/2026.08.04/16.45.29_train_canonical_stack_d1
+  wandb_name_base: 2026.08.04-16.45.29_train_canonical_stack_d1
+task:
+  name: mimicgen_pc_abs
+  shape_meta:
+    obs:
+      robot0_eye_in_hand_image:
+        shape:
+        - 3
+        - 84
+        - 84
+        type: rgb
+      point_cloud:
+        shape:
+        - 1024
+        - 6
+        type: point_cloud
+      robot0_eef_pos:
+        shape:
+        - 3
+      robot0_eef_quat:
+        shape:
+        - 4
+      robot0_gripper_qpos:
+        shape:
+        - 2
+    action:
+      shape:
+      - 10
+  env_runner_shape_meta:
+    obs:
+      robot0_eye_in_hand_image:
+        shape:
+        - 3
+        - 84
+        - 84
+        type: rgb
+      agentview_image:
+        shape:
+        - 3
+        - 84
+        - 84
+        type: rgb
+      point_cloud:
+        shape:
+        - 1024
+        - 6
+        type: point_cloud
+      robot0_eef_pos:
+        shape:
+        - 3
+      robot0_eef_quat:
+        shape:
+        - 4
+      robot0_gripper_qpos:
+        shape:
+        - 2
+    action:
+      shape:
+      - 10
+  abs_action: true
+  env_runner:
+    _target_: canonical_policy.env_runner.robomimic_image_runner.RobomimicImageRunner
+    dataset_path: data/robomimic/datasets/stack_d1/stack_d1_voxel_abs.hdf5
+    shape_meta:
+      obs:
+        robot0_eye_in_hand_image:
+          shape:
+          - 3
+          - 84
+          - 84
+          type: rgb
+        agentview_image:
+          shape:
+          - 3
+          - 84
+          - 84
+          type: rgb
+        point_cloud:
+          shape:
+          - 1024
+          - 6
+          type: point_cloud
+        robot0_eef_pos:
+          shape:
+          - 3
+        robot0_eef_quat:
+          shape:
+          - 4
+        robot0_gripper_qpos:
+          shape:
+          - 2
+      action:
+        shape:
+        - 10
+    n_train: 1
+    n_train_vis: 1
+    train_start_idx: 0
+    n_test: 50
+    n_test_vis: 1
+    test_start_seed: 100000
+    max_steps: 400
+    n_obs_steps: 2
+    n_action_steps: 8
+    render_obs_key: agentview_image
+    fps: 10
+    crf: 22
+    past_action: false
+    abs_action: true
+    tqdm_interval_sec: 1.0
+    n_envs: 26
+  dataset:
+    _target_: canonical_policy.dataset.robomimic_replay_point_cloud_dataset.RobomimicReplayPointCloudDataset
+    n_demo: 200
+    shape_meta:
+      obs:
+        robot0_eye_in_hand_image:
+          shape:
+          - 3
+          - 84
+          - 84
+          type: rgb
+        point_cloud:
+          shape:
+          - 1024
+          - 6
+          type: point_cloud
+        robot0_eef_pos:
+          shape:
+          - 3
+        robot0_eef_quat:
+          shape:
+          - 4
+        robot0_gripper_qpos:
+          shape:
+          - 2
+      action:
+        shape:
+        - 10
+    dataset_path: data/robomimic/datasets/stack_d1/stack_d1_voxel_abs.hdf5
+    horizon: 16
+    pad_before: 1
+    pad_after: 7
+    n_obs_steps: 2
+    abs_action: true
+    rotation_rep: rotation_6d
+    use_legacy_normalizer: false
+    use_cache: true
+    seed: 42
+    val_ratio: 0.01

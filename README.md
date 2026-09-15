@@ -192,7 +192,7 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 | Stack D1 | CP-SO3 | 43 | 76% |
 | NutAssembly D0 | CP-SO2 | 43 | 24% full completion, mean score 0.42 |
 
-Stack CP-SO2 two-seed mean = 80%。  Stack CP-SO3 two-seed mean = 74%。
+Stack CP-SO2 两个训练 seed 的平均成功率为 80%，CP-SO3 为 74%。
 
 Stack 目前只有两个 training seeds，不能据此声称统计显著；NutAssembly 目前只有一个 training seed。详细实验过程见 `records/` 下对应目录，完整总结见 [`records/canonical_policy_experiment_record.md`](records/canonical_policy_experiment_record.md)，精简结果表见 [`records/final_results_summary.md`](records/final_results_summary.md)。
 
@@ -249,7 +249,7 @@ Stack 目前只有两个 training seeds，不能据此声称统计显著；NutAs
 1. 增加 training seeds，验证结果稳定性；
 2. 增加更多 manipulation tasks；
 3. 利用官方 canonical representation / equivariance 代码进行轻量原理验证；
-4. 整理最终结果表格、图表和论文对照分析。
+4. 补充实验可视化和典型成功/失败案例分析。
 
 不计划为了形式上的“完整”强行重跑全部 benchmark。
 

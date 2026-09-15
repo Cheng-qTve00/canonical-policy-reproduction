@@ -1,5 +1,18 @@
 # 07 论文结果对照
 
+> **历史阶段记录**
+>
+> 本文件记录的是 strict-batch 最终协议确定之前的早期 Stack D1 / CP-SO2 训练与论文对照分析，保留用于追踪复现过程，不作为仓库最终结果。
+>
+> 最终有效结果请以以下文件为准：
+>
+> - `records/09_strict_batch_final_v2_eval/`
+> - `records/10_cp_so3_final_v2_eval/`
+> - `records/11_cp_so2_seed43_eval/`
+> - `records/12_cp_so3_seed43_eval/`
+> - `records/final_results_summary.md`
+
+
 ## 1. 对照目标
 
 本阶段用于比较当前 Stack D1 / CP-SO2 复现实验与 Canonical Policy 论文报告结果。

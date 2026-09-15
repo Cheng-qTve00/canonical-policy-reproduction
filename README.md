@@ -182,96 +182,19 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 
 ---
 
-## CP-SO2 最终结果
+## 最终实验结果概览
 
-实验配置：
+| Task | Method | Seed | Success Rate / Score |
+|---|---|---:|---:|
+| Stack D1 | CP-SO2 | 42 | 84% |
+| Stack D1 | CP-SO2 | 43 | 76% |
+| Stack D1 | CP-SO3 | 42 | 72% |
+| Stack D1 | CP-SO3 | 43 | 76% |
+| NutAssembly D0 | CP-SO2 | 43 | 24% full completion, mean score 0.42 |
 
-- Stack D1
-- CP-SO2
-- 200 demonstrations
-- seed = 42
-- 250 epochs
+Stack CP-SO2 two-seed mean = 80%。  Stack CP-SO3 two-seed mean = 74%。
 
-最终 checkpoint：
-
-    epoch = 249
-    global_step = 156249
-    optimizer_step = 39250
-
-最终独立评估：
-
-    n_test = 50
-    test_start_seed = 100000
-    n_envs = 4
-    max_steps = 400
-
-结果：
-
-    42 / 50 success
-    Success Rate = 84%
-
-论文中对应结果约为：
-
-    79 ± 7 %
-
-因此本次单 seed 复现结果与论文报告的性能水平处于同一范围。
-
-完整记录：
-
-    records/09_strict_batch_final_v2_eval/
-
----
-
-## CP-SO3 最终结果
-
-实验配置与 CP-SO2 保持一致，主要区别为：
-
-    policy.pointnet_type = cp_so3
-
-最终 checkpoint：
-
-    epoch = 249
-    global_step = 156249
-    optimizer_step = 39250
-
-使用与 CP-SO2 完全相同的 50 个 test seeds 进行独立评估。
-
-结果：
-
-    36 / 50 success
-    Success Rate = 72%
-
-完整记录：
-
-    records/10_cp_so3_final_v2_eval/
-
----
-
-## CP-SO2 与 CP-SO3 对比
-
-| Method | Success | Failure | Success Rate |
-| --- | ---: | ---: | ---: |
-| CP-SO2 | 42 / 50 | 8 / 50 | 84% |
-| CP-SO3 | 36 / 50 | 14 / 50 | 72% |
-
-两种方法使用：
-
-- 相同任务
-- 相同 200 demonstrations
-- 相同 training seed
-- 相同训练 epoch
-- 相同 optimizer update 数量
-- 相同 batch / gradient accumulation 设置
-- 相同 50 个 test seeds
-- 相同 evaluation 配置
-
-因此可以进行直接对照。
-
-在本次单 training seed 实验中，CP-SO2 比 CP-SO3 高 12 个百分点。
-
-但目前每种方法只有一个 training seed，因此不能据此声称 CP-SO2 在统计意义上显著优于 CP-SO3。
-
----
+Stack 目前只有两个 training seeds，不能据此声称统计显著；NutAssembly 目前只有一个 training seed。详细实验过程见 `records/` 下对应目录，完整总结见 [`records/canonical_policy_experiment_record.md`](records/canonical_policy_experiment_record.md)，精简结果表见 [`records/final_results_summary.md`](records/final_results_summary.md)。
 
 ## 当前完成进度
 
@@ -290,7 +213,7 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 - [x] Stack D1 第二个 training seed（CP-SO2 / CP-SO3）
 - [x] NutAssembly D0 第二任务训练与评估（CP-SO2 seed43）
 - [ ] equivariance / canonicalization 原理验证
-- [ ] 最终实验汇总与论文对照分析
+- [x] 最终实验汇总与论文对照分析
 
 ---
 
@@ -324,7 +247,7 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 优先考虑：
 
 1. 增加 training seeds，验证结果稳定性；
-2. 增加一个不同类型 manipulation task；
+2. 增加更多 manipulation tasks；
 3. 利用官方 canonical representation / equivariance 代码进行轻量原理验证；
 4. 整理最终结果表格、图表和论文对照分析。
 

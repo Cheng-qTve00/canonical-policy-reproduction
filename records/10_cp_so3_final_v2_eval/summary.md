@@ -143,7 +143,7 @@ CP-SO3：
 
     CP-SO2 比 CP-SO3 高 12 个百分点
 
-但由于目前每种方法都只有一个 training seed，因此不能直接据此声称 CP-SO2 在统计意义上显著优于 CP-SO3。
+该段只比较 seed42 的单次结果，不能据此声称 CP-SO2 在统计意义上显著优于 CP-SO3；完整的双 seed 结果见 `records/final_results_summary.md`。
 
 更准确的表述是：
 

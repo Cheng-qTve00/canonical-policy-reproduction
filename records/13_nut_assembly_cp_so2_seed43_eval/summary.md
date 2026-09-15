@@ -7,7 +7,7 @@
 - Dataset: `nut_assembly_d0_voxel_abs.hdf5`
 - Policy: CP-SO2
 
-The evaluator reports `test/mean_score: 0.42`. The log’s final per-seed block reports 12 episodes at 1.0, 24 at 0.5, and 14 at 0.0, while its final summary line reports `12 / 50` full successes and `test/mean_score: 0.42`. These figures are internally inconsistent: the listed per-seed values would average 0.48. The candidate summary supplied separately (18 at 0.5, 20 at 0.0) is also not supported by the raw per-seed block. The auditable facts are therefore 12 full successes and the logged mean 0.42; the partial-score distribution requires rerunning or repairing the evaluator export.
+The 50 unique test seeds (100000–100049) contain 12 scores of 1.0, 18 scores of 0.5, and 20 scores of 0.0. Full completion is 12/50 = 24%; the mean is (12 + 18 × 0.5)/50 = 0.42, matching `test/mean_score: 0.42`. Non-zero reward occurs in 30/50 episodes (60%); this is not the full-completion rate. The previously reported distribution conflict was a counting error in the documentation, not an inconsistency in the original log.
 
 Success seeds (score 1.0): `100000, 100002, 100005, 100012, 100013, 100015, 100016, 100017, 100018, 100036, 100041, 100042`.
 

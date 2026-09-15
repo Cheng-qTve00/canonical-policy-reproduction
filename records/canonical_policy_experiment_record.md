@@ -1,5 +1,6 @@
-Canonical Policy 论文复现与实验总结
-一、实验范围、选择依据与局限性
+# Canonical Policy 论文复现与实验总结
+
+## 一、实验范围、选择依据与局限性
 
 本项目主要围绕论文 Canonical Policy: Learning Canonical 3D Representation for SE(3)-Equivariant Policy 的公开代码进行复现。
 
@@ -17,15 +18,16 @@ NutAssembly D0 的单次完整训练耗时较长，因此目前只完成了 CP-S
 
 因此，本项目目前的实验范围可以概括为：
 
-实验内容	目的
-Stack D1 + CP-SO2	主要复现实验
-Stack D1 + CP-SO3	与 CP-SO2 进行方法对比
-Stack D1 两个训练 seed	初步观察训练随机性
-NutAssembly D0 + CP-SO2	第二任务的完整训练与评估
+| 实验内容 | 目的 |
+|---|---|
+| Stack D1 + CP-SO2 | 主要复现实验 |
+| Stack D1 + CP-SO3 | 与 CP-SO2 进行方法对比 |
+| Stack D1 两个训练 seed | 初步观察训练随机性 |
+| NutAssembly D0 + CP-SO2 | 第二任务的完整训练与评估 |
 
 需要特别说明的是，本项目的价值更侧重于完整复现训练链路、理解代码实现、分析不同设置的实验表现以及记录实际复现过程中遇到的问题，而不是以有限的本地计算资源重新构建论文的全部 benchmark。
 
-二、项目目标
+## 二、项目目标
 
 本项目围绕 Canonical Policy 的公开代码展开，主要希望完成以下工作。
 
@@ -48,7 +50,7 @@ Canonical Encoder解决什么问题
 如何保证评估协议一致
 →
 实验结果应该如何解释
-三、实验环境与本地训练适配
+## 三、实验环境与本地训练适配
 
 实验主要在个人笔记本的 WSL 环境中完成。
 
@@ -67,7 +69,7 @@ gradient accumulation = 4
 
 这一修改主要属于硬件条件下的训练适配，而不是对 Canonical Policy 网络结构或损失函数进行修改。
 
-四、数据处理与动作表示
+## 四、数据处理与动作表示
 
 实验数据来自 MimicGen。
 
@@ -117,7 +119,7 @@ HDF5 中 action 为 7D
 
 这个问题也是本次代码阅读中比较重要的一个理解点。
 
-五、Stack D1 主实验
+## 五、Stack D1 主实验
 
 Stack D1 是本项目的主要复现任务。
 
@@ -132,11 +134,12 @@ CP-SO3
 
 目前实验记录中的结果为：
 
-Task	Method	Training Seed	Evaluation Episodes	Success Rate
-Stack D1	CP-SO2	42	50	84%
-Stack D1	CP-SO2	43	50	76%
-Stack D1	CP-SO3	42	50	72%
-Stack D1	CP-SO3	43	50	76%
+| Task | Method | Training Seed | Evaluation Episodes | Success Rate |
+|---|---|---:|---:|---:|
+| Stack D1 | CP-SO2 | 42 | 50 | 84% |
+| Stack D1 | CP-SO2 | 43 | 50 | 76% |
+| Stack D1 | CP-SO3 | 42 | 50 | 72% |
+| Stack D1 | CP-SO3 | 43 | 50 | 76% |
 
 按当前记录计算：
 
@@ -155,7 +158,7 @@ CP-SO3 两个 seed 平均：74%
 
 在当前两个训练随机种子的实验范围内，CP-SO2 的平均成功率高于 CP-SO3，但由于实验数量有限，该结果主要用于复现趋势和方法比较，不作为统计显著性结论。
 
-六、NutAssembly D0 第二任务实验
+## 六、NutAssembly D0 第二任务实验
 
 完成 Stack D1 后，本项目进一步选择 NutAssembly D0 进行完整训练。
 
@@ -188,7 +191,7 @@ epoch
 
 以确认评估使用的确实是 NutAssembly D0 最终模型。
 
-七、NutAssembly D0 正式评估结果
+## 七、NutAssembly D0 正式评估结果
 
 正式评估共运行 50 个测试 episode。
 
@@ -208,7 +211,7 @@ $$ (12\times1+18\times0.5+20\times0)/50=0.42 $$
 
 另有 `12 + 18 = 30` 个 episode 获得非零 reward，即 60%。但非零 reward 比例不能等同于完整成功率；完整成功率仍为 24%。
 
-八、两个任务实验结果的观察
+## 八、两个任务实验结果的观察
 
 从目前的实验结果来看，Stack D1 上 CP-SO2 的表现明显高于 NutAssembly D0 上当前这一训练实例的完整成功率。
 
@@ -232,7 +235,7 @@ NutAssembly 中存在较多 reward=0.5 的部分完成结果，说明部分测�
 
 如果后续继续研究，相比单纯增加训练 epoch，更值得分析 reward=0.5 episode 的具体失败阶段。
 
-九、复现过程中遇到的主要工程问题
+## 九、复现过程中遇到的主要工程问题
 
 本次实验过程中遇到的问题主要集中在硬件适配、仿真环境和实验配置管理三个方面。
 
@@ -273,7 +276,7 @@ output directory
 
 这一经验对后续机器人学习实验尤其重要，因为一次错误配置可能造成较大的计算时间浪费。
 
-十、实验结果的局限性
+## 十、实验结果的局限性
 
 当前实验最大的限制仍然是计算资源。
 
@@ -303,7 +306,7 @@ NutAssembly CP-SO3
 
 从而判断当前观察到的趋势是否稳定。
 
-十一、总结
+## 十一、总结
 
 本项目完成了 Canonical Policy 从环境搭建、MimicGen 数据处理、点云 observation 构建、absolute action 转换、Canonical Policy 训练到正式仿真评估的一整套复现流程。
 

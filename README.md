@@ -51,13 +51,16 @@
 
 - Task: Stack D1
 - Demonstrations: 200
-- Training seed: 42
+- Training seeds: 42, 43
 - Epochs: 250
 
 已完成：
 
 - CP-SO2
 - CP-SO3
+- NutAssembly D0 / CP-SO2 / seed43
+
+完整实验总结见 [`records/canonical_policy_experiment_record.md`](records/canonical_policy_experiment_record.md)。
 
 ---
 

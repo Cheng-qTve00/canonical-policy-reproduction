@@ -284,8 +284,8 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 - [x] CP-SO2 50-episode 独立评估
 - [x] CP-SO3 正式训练
 - [x] CP-SO3 50-episode 独立评估
-- [ ] 多 training seed 重复实验
-- [ ] 第二个 manipulation task
+- [x] Stack D1 第二个 training seed（CP-SO2 / CP-SO3）
+- [x] NutAssembly D0 第二任务训练与评估（CP-SO2 seed43）
 - [ ] equivariance / canonicalization 原理验证
 - [ ] 最终实验汇总与论文对照分析
 
@@ -295,7 +295,7 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 
 目前可以认为已经完成：
 
-> Stack D1 上 CP-SO2 和 CP-SO3 的代表性单 seed 复现实验。
+> Stack D1 上 CP-SO2 和 CP-SO3 的两个 seed 复现实验，以及 NutAssembly D0 CP-SO2 seed43 的补充实验。
 
 目前不能声称：
 
@@ -303,7 +303,7 @@ LR scheduler 和 EMA 均只在真正 optimizer update 时更新。
 
 原因包括：
 
-1. 当前主要结果只有 training seed = 42；
+1. Stack D1 已有 training seed = 42、43；NutAssembly 当前只有 seed = 43；
 2. 论文结果通常报告 mean ± std；
 3. 尚未复现全部 manipulation tasks；
 4. 尚未复现全部 baseline；
